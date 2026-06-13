@@ -22,29 +22,37 @@ https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 For C++ Tools, this is what you need, just check that box. <img width="1221" height="625" alt="image" src="https://github.com/user-attachments/assets/28610cb3-650d-43c9-bf09-4505a62272de" />
 
-Now.
+# First time instalation:
 
-Download Eden bot.
+Step 1: Download bot directly from this repo, unzip file
 
-In cmd....
+Step 2: Open the bot folder (usually second one) in cmd like this
 
-cd (file location) example: C:\Users\yourusernamehere\Downloads\Umamusume-API-Bot-main\Umamusume-API-Bot-main
+```cmd
+example: cd C:\Users\yourusernamehere\Downloads\Umamusume-API-Bot-main\Umamusume-API-Bot-main
+```
+Step 3: Paste the following lines in order. 
 
-winget install -e --id OpenJS.NodeJS 
+```cmd
+winget install -e --id OpenJS.NodeJS
+```
+Accept terms, then:
 
+```cmd
 npm i
+```
+Disregard the error you might have here, then:
 
-Close and call bot in cd again
+```cmd
+pip install -r requirements.txt 
+```
+Once the above it done, paste or type:
 
-pip install -r requirements.txt (you will need an older ver of python for this)
+```cmd
+python main.py
+```
 
-# Running the bot!
-
-Make sure your veteran umas are cleared and have no career in progress. Plenty of gems are needed as well. 
-
-In cmd, cd file location then main.py. Bot will open steam and launch the game close in loading screen, paste the provided address in your browser and sign in using your Steam info, it will ask for a code sent to your email, provide that, and you're in. 
-
-Recommended to use an alt Steam account. Make sure you have no (non-MANT) careers in progress. Rest should be self-explanatory.
+The bot will launch steam and umamusume then promptly close the game shortly before fully loading in, you will be given a web address, please paste this into your browser, you will be promted to log into your steam account, (it is recommended to use an alt). Web UI will request a steamguard code, once provided, you're in! Everything from here should be self explanitory. 
 
 # Running multiple bots!
 
