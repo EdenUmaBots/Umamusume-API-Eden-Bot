@@ -1,47 +1,57 @@
-# Ver 2.0.0 is now available
+## Icarus v2.0 — The Big One
 
-This update is a major step forward for the project, bringing a redesigned experience and powerful new automation features while still keeping full user control where it matters.
+__The biggest leap since launch. The Trackblazer Engine grows up: it chases set-bonuses, races smarter without over-racing, spends the shop like a pro, picks event answers from a 3,600+ event database — and the dashboard finally shows you what it's doing, item icons and all. Here's everything new__
 
- What’s new in v2.0
+## ⚙️ The Trackblazer Engine is now the default
+A **solver-driven decision core** built for the Trackblazer/MANT scenario. Instead of scoring one turn at a time, it treats your **whole career as a single optimization problem**:
+- 🗓️ **Whole-career race scheduling** — an exact route optimizer (with a fast heuristic fallback) weighs the entire calendar at once and locks in the schedule that maximizes stats, fans, set-bonus completion and aptitude fit — while respecting your max-races-in-a-row limit and the summer/finale windows.
+- ♻️ **Plans, then adapts** — solved at career start, then re-planned live when a race is lost or drops off the calendar, so it stays valid as the run actually plays out.
+- 🏁 **Built around the racing economy** — train-vs-race-vs-rest decisions account for the currency → items → stats loop, energy, mood, consecutive-race risk, and the marquee G1s & finale climax races.
+- 🛡️ **Smarter, safer racing** — energy/streak guards, a marquee-race prediction gate, and summer/finale handling push for value without over-racing or throwing winnable races.
+- 🔁 **Classic is still here** — the previous turn-by-turn engine is one click away under *Decision Engine* __Classic is still here__ — the previous turn-by-turn engine is one click away under Decision Engine.
 
-- New & improved Web UI — faster, cleaner, and easier to use,
-- Full Auto Careers — set it up once and let it run hands-free,
-- Smart Race Solver — intelligently selects optimal races while avoiding high-risk outcomes,
-- You stay in control — customize running styles, skill tiers, event choices, support decks, and more,
-- Adaptive assistance system — optional, safety-locked AI that only activates when enabled and trusted,
+## 🏆 Race & Set-Bonus Engine
+- 🥇 **Chases set-bonuses (Epithets)** — new *Chase Achievable Set-Bonuses* option: the Smart Race Solver now schedules races to **complete sets** — Triple Crowns, distance/regional/surface sets and more — for their large random-stat rewards that were previously left on the table. This is the headline stat lever.
+- ♻️ **Live Schedule Re-Planning toggle** — a proper switch in Smart Race Solver settings: ON (default) re-routes the remaining schedule after a loss; OFF locks in the plan solved at career start.
+- 🚫 **No more over-racing** — a runtime cap now honors your *max races in a row* setting. Careers that ran 46–48 races with 8–10 in a row now run ~42 with streaks capped — recovering total stats and win rate.
+- 🎯 **More marquee G1s run** — fixed race matching for marquee races (Japan Cup, Arima Kinen, Takarazuka Kinen, Tenno Sho…) that the game offers under several internal IDs. They were being skipped; now they run.
+- ⚖️ **Outcome Risk has its own section** in Racing settings, with a toggle — you decide whether the solver weighs race-loss risk.
 
-# Full customization, your way Sweepy 2.0 gives you deeper control than ever before:
+## Stat Focus
 
-- Running styles (per-distance support),
-- Burn Clock management,
-- Skill priority tiers,
-- Event handling (AUTO / FORCED choices),
-- Skip rules (green / red / unique skills),
-- Recommended support setups for each trainee,
-- Can now use borrowed parents for your careers,
+__New Stat Focus control: Balanced spreads stats evenly, while Capped concentrates your priority stats to push their ceilings. Set it per preset.__
 
-Thank you very much to our @Bot Developer / Contributor for your continued hard work and dedication, and shout out to @🆂🅻🅸🅲🅺 for this major contribution. 
+## Speed
 
-The work we do here is to create a solid foundation which will serve as a base for current and future scenarios, we are committed to creating the best possible tool to help the community at large. 
+__The old Tempt-Fate on/off toggle is replaced by a Speed dropdown — Safe / Fast / Faster / Ludicrous. The levels now genuinely differ: each scales the bot's pacing (Safe keeps human-like timing; Ludicrous removes it). Previously Fast, Faster and Ludicrous all ran at the same real speed — fixed.__
 
-If you would like to join our team or contribute in any way, please feel free to reach out.
+## Shop & Items
+- Smarter shop spending — race hammers are conserved and saved for the three finale climax races (where they pay off most); training megaphones & anklets are bought for your priority stats; energy, cures and snacks are bought by need; and a finale coin reserve keeps funds on hand for the climax.,
+- Item icons in Decision Reasoning — every shop item the bot buys or uses now shows its in-game icon beside its name.
 
-Thank you for your continued support, and enjoy Sweepy 2.0
+## Event Choices
+The event auto-selector got a major upgrade:
 
-Continued.
+- Massively expanded coverage — when there's no observed data for an event, it now falls back to a 3,600+ event effect database and scores the real choice effects, instead of a blind "pick the second option" guess.,
+- Stat-cap aware — no longer over-values points dumped into an already-maxed stat.,
+- Turn-aware energy — values energy more during summer camp and the finale stretch, where it matters most.,
+- More accurate matching — tightened event lookup so it won't mis-score an unrelated event that merely shared a few trailing ID digits.
+
+## Decision Reasoning
+
+__Clearer, more accurate per-turn explanations — including correct item labels (training megaphones shown as training boosts, race hammers as race buffs) so the panel matches what actually happened. The live on-screen race list is now captured for diagnostics too.__
+
+## Fixes & Quality of Life
+
+- Career History sparks are correct per career — each finished career now shows the sparks it actually earned, instead of repeating the same inherited parent sparks every time.
+- Running style is set correctly (e.g. Oguri Cap runs Pace, not Late) — fixed the in-race running-style change to send the right data at the right step.
+- Skill-config UI fixes and a fixed dashboard console/network error.
+
 -------------
 
-# Capable of 200M+ fans per day/ 5min MANT runs, all previous restrictions removed, multiple accounts can be run simultaneously.
-<img width="1216" height="106" alt="image" src="https://github.com/user-attachments/assets/6b0a2c0b-4268-4b2d-8fee-69f0b3160cea" />
+## Join our discord: https://discord.gg/wpbd3hTBDc
 
-# TLDR: Spam Sweepy logo until the "dev" button pops up, click it and "tempt fate", that's it!
-<img width="1876" height="86" alt="image" src="https://github.com/user-attachments/assets/b5bee15f-1d6e-46f6-8779-f6a79f443c79" />
-
-<img width="1080" height="262" alt="image" src="https://github.com/user-attachments/assets/41fb609c-9c3b-4624-a956-f38143f95b11" />
-
-T500 to T10 in 4 days btw.
-
-Join our discord: https://discord.gg/wpbd3hTBDc
+-------------
 
 # ! Written installation guide, video below.
 
