@@ -1,3 +1,7 @@
+# Our development team is working on porting the bot to the lastest game update, join discord for latest updates.
+
+<img width="1230" height="785" alt="image" src="https://github.com/user-attachments/assets/8ad36af1-f239-4ebb-994a-b2365f8e9d3f" />
+
 # Icarus 3.0
 
 > The most advanced automation and career optimization engine for Umamusume: Pretty Derby.
